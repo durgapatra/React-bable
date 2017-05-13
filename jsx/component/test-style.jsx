@@ -32,15 +32,15 @@ export default class StyleInpBox extends React.Component {
         }
     }
     componentDidUpdate() {
-        if (this.props.onRed == false) {
+        if (this.props.onRed == true) {
             this.refs.inputBox.style.borderBottom = "2px solid red";
             this.refs.label.style.color = "red";
             this.refs.bar.style.color = "red";
         } else {
-            if (this.props.onRed == true && this.refs.inputBox.style.borderBottom == "2px solid red") {
-                 this.refs.inputBox.style.borderBottom = "2px solid blue";
-            this.refs.label.style.color = "blue";
-            this.refs.bar.style.color = "blue";
+            if (this.props.onRed == false && this.refs.inputBox.style.borderBottom == "2px solid red") {
+                this.refs.inputBox.style.borderBottom = "2px solid blue";
+                this.refs.label.style.color = "blue";
+                this.refs.bar.style.color = "blue";
             }
         }
 

@@ -5,7 +5,7 @@ export default class Master extends React.Component {
     constructor() {
         super();
         this.state = {
-            schoolMode: true
+            schoolMode: false
         }
     }
     enterName(e) {
@@ -17,9 +17,9 @@ export default class Master extends React.Component {
     enterSchool(e) {
         console.log("school", e);
         if (e == 13) {
-            this.state.schoolMode = false;
-        } else {
             this.state.schoolMode = true;
+        } else {
+            this.state.schoolMode = false;
         }
         this.setState(this.state);
     }
