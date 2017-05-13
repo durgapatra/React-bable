@@ -1,0 +1,11 @@
+js/
+.idea/
+node_modules
+jsconfig.json
+typings/
+manastest/
+public/bundle.js
+public/bundle.js.map
+public/*bundle.js
+
+

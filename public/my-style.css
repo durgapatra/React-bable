@@ -1,0 +1,53 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.main-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    z-index: 100;
+}
+
+.container{
+    display: flex;
+  min-width:700px; 
+     height: 500px;
+    align-self: center;
+     box-shadow:0 0 2px rgba(0,0,0,0.12),0 2px 2px rgba(0,0,0,0.26);
+     z-index: 101;
+}
+
+.box{
+  flex: 1; 
+  display: flex;
+ background-color: blue;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+
+.box1{
+    flex: 2;
+    display: flex; 
+    position: relative;
+    justify-content: space-around;
+}
+
+.inpBox{
+ align-self: center;
+
+}
+
+
+
+.right-butoom{
+    align-self: flex-end;
+    position: absolute;
+    right:0; 
+    border-top:25px solid white;
+    border-left:25px solid white;
+    border-right:25px solid blue;
+    border-bottom:25px solid blue;   
+}
