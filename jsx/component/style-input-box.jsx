@@ -61,12 +61,9 @@ export default class StyleInpBox extends React.Component {
     render() {
         return (
             <div className="main-inputContainer" ref="inputContainer" style={this.props.Width ? { width: this.props.Width } : { width: "200px" }}>
-                <div className="inputContainer">
-                    <input type={this.props.inputType ? this.props.inputType : "text"} style={this.props.Width ? { width: this.props.Width } : { width: "200px" }} onKeyUp={this.handleKeyUp.bind(this)} ref="inputBox" className="inputBox" onFocus={this.onFocusInPutBox.bind(this)} onBlur={this.onBlurInp.bind(this)} />
-                    {this.props.nearBarMsg ? <span className="nearbar" ref="bar">{this.props.nearBarMsg}</span> : null}
-                    <span className="InputLabel" ref="label">{this.props.placeholder ? this.props.placeholder : "plase give a placeholder"}</span>
-                </div>
-
+                <input type={this.props.inputType ? this.props.inputType : "text"} style={this.props.Width ? { width: this.props.Width } : { width: "200px" }} onKeyUp={this.handleKeyUp.bind(this)} ref="inputBox" className="inputBox" onFocus={this.onFocusInPutBox.bind(this)} onBlur={this.onBlurInp.bind(this)} />
+                {this.props.nearBarMsg ? <span className="nearbar" ref="bar">{this.props.nearBarMsg}</span> : null}
+                <span className="InputLabel" ref="label">{this.props.placeholder ? this.props.placeholder : "plase give a placeholder"}</span>
             </div>
         )
     }

@@ -12,6 +12,7 @@ export default class Home extends React.Component {
     handleClick() {
         var myInit = {
             method: 'POST',
+
              body: JSON.stringify({a: 7, str: 'Some string: &=&'})
         };
 
@@ -21,7 +22,6 @@ export default class Home extends React.Component {
                 console.log("it is successfully send a post request");
                 return response.json();
             }
-
         }).then((data) => {
             console.log(data);
         }).catch((err) => {

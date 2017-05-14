@@ -1,5 +1,5 @@
 import React from "react";
-import StyleInpBox from "./test-style";
+import StyleInpBox from "./style-input-box";
 
 export default class Master extends React.Component {
     constructor() {
@@ -53,8 +53,6 @@ export default class Master extends React.Component {
                                 onRed={this.state.schoolMode}
                                 handleKeyUp={this.enterSchool.bind(this)}
                             />
-
-                            <StyleInpBox></StyleInpBox>
                         </div>
                         <div className="right-butoom"></div>
                     </div>
