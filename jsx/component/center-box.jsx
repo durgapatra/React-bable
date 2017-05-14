@@ -53,6 +53,8 @@ export default class Master extends React.Component {
                                 onRed={this.state.schoolMode}
                                 handleKeyUp={this.enterSchool.bind(this)}
                             />
+
+                            <StyleInpBox></StyleInpBox>
                         </div>
                         <div className="right-butoom"></div>
                     </div>

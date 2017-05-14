@@ -9,16 +9,14 @@ body{
     flex-direction: column;
     z-index: 100;
 }
-
 .container{
     display: flex;
-  min-width:700px; 
+    min-width:700px; 
      height: 500px;
     align-self: center;
      box-shadow:0 0 2px rgba(0,0,0,0.12),0 2px 2px rgba(0,0,0,0.26);
      z-index: 101;
 }
-
 .box{
   flex: 1; 
   display: flex;

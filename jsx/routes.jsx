@@ -13,7 +13,7 @@ const routs = [
         path:"/",
         getComponents(location, callback) {
             require.ensure([], (require) => {
-                callback(null, require('./component/master').default);
+                callback(null, require('./component/center-box').default);
             })
         }
     },
@@ -21,7 +21,7 @@ const routs = [
      path:"/style",
         getComponents(location, callback) {
             require.ensure([], (require) => {
-                callback(null, require('./component/test-style').default);
+                callback(null, require('./component/style-input-box').default);
             })
         }
 }
