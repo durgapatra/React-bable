@@ -1,57 +1,73 @@
+.main-inputContainer {
+    min-height: 50px;
+    z-index: 10;
+    top: 0px;
+    left: 0px;
+    position: relative;
+    width: 200px;
+}
 
-
-.main-inputContainer{
-  min-height: 50px;
-   z-index: 10;
-   top: 0px;
-   left: 0px;
-   position: relative;
-  width: 200px;
-     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-around;
- }
-
-.inputBox{
-  width: 200px;
+.inputBox {
+    width: 200px;
     display: inline-block;
     border: none;
-    border-bottom:2px solid gray; 
-     position: absolute;
-     left: 0;
-     top:0;   
-     font-size: 16px; 
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 16px;
 }
-.inputBox:focus{ 
-  outline:none;
-  animation:inputBox 0.3s ease;
-  }
-.nearbar{
+
+.inputBox:focus {
+    outline: none;
+}
+
+.inputBoxBorder {
+    position: absolute;
+    width: 100px;
+    top: 20px;
+    left: 0;
+    pointer-events: none;
+    border-bottom: 2px solid gray;
+}
+
+.inputBox:focus+.inputBoxBorder {
+    animation: inputBoxBorder 0.3s ease;
+}
+
+.nearbar {
     display: block;
     position: absolute;
     left: 0;
     top: 20px;
-    font-size: 16px;   
+    font-size: 16px;
     color: gray;
 }
- 
-.InputLabel 				 {
-  color:inherit; 
-  font-size:18px;
-  font-weight:normal;
-  position:absolute;
-  pointer-events:none;
-  left:0px;
-  top:-2px;
-  color: gray;
+
+.InputLabel {
+    color: inherit;
+    font-size: 18px;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 0px;
+    top: -2px;
+    color: gray;
 }
 
-
-@keyframes inputBox {
-  0% {width: 0;}
-  25%{width:25%}
-  50% { width:50%}
-  75%{width:75%}
-  100%{width:inherit}
+@keyframes inputBoxBorder {
+    0% {
+        width: 0;
+    }
+    25% {
+        width: 25%
+    }
+    50% {
+        width: 50%
+    }
+    75% {
+        width: 75%
+    }
+    100% {
+        width: inherit
+    }
 }
